@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap");
+
+@import "./reset";
+@import "./vars";
+
+@import "./default";
+
+// components
+@import "../../components/TopStrip/TopStrip";
+@import "../../components/Header/Header";
+@import "../../components/Container/Container";
+@import "../../components/Input/Input";
+@import "../../components/Header2/Header2";
+@import "../../components/ProductDetails/ProductDetails";
+@import "../../components/ImgSlides/ImgSlides";
+@import "../../components/RadioColor/RadioColor";
+@import "../../components/RadioChip/RadioChip";
+@import "../../components/QuantityInput/QuantityInput";
+@import "../../components/TabHead/TabHead";
+@import "../../components/TabDetails/TabDetails";
+@import "../../components/Ratings/Ratings";
+@import "../../components/StarCount/StarCount";
+@import "../../components/RateProduct/RateProduct";
+@import "../../components/ProductsList/ProductsList";
+@import "../../components/Product/Product";
+@import "../../components/MobileHeader/MobileHeader";
+@import "../../components/MobileNav/MobileNav";
+
+// pages

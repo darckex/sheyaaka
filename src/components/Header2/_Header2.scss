@@ -1,0 +1,32 @@
+.header2 {
+	padding: 19px 0;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu {
+		display: flex;
+		gap: 30px;
+		a {
+			font-size: $fontSize4;
+			font-weight: $medium;
+			&.active {
+				color: $yellow;
+			}
+		}
+	}
+
+	.icon-holder {
+		display: flex;
+		gap: 10px;
+
+		img {
+			cursor: pointer;
+			width: 30px;
+		}
+	}
+	@media (max-width: $screenSize1) {
+		display: none;
+	}
+}

@@ -1,0 +1,45 @@
+.img-slides {
+	.active-slide {
+		width: 100%;
+		position: relative;
+		.img {
+			width: 100%;
+			aspect-ratio: 4/4.6;
+			object-fit: cover;
+		}
+		.top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 10px 0 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.tag {
+			background-color: #fff;
+			padding: 10px 17px 10px 12px;
+			border-radius: 0 100px 100px 0;
+			font-family: $lato;
+			font-size: $fontSize4;
+		}
+		.icon {
+			width: 25px;
+			height: 22px;
+		}
+	}
+	.thumbnail-holder {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		margin-top: 20px;
+
+		img {
+			opacity: 0.3;
+			width: 100%;
+			object-fit: cover;
+			aspect-ratio: 4/4.2;
+		}
+	}
+}

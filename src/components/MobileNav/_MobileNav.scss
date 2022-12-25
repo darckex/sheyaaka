@@ -1,0 +1,21 @@
+.mobile-nav {
+	display: none;
+	grid-template-columns: repeat(5, 1fr);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: $blueDark;
+	color: white;
+	font-size: $fontSize2;
+	.mobile-nav-item {
+		display: grid;
+		place-items: center;
+		gap: 5px;
+		text-align: center;
+		padding: 10px 0;
+	}
+	@media (max-width: $screenSize1) {
+		display: grid;
+	}
+}

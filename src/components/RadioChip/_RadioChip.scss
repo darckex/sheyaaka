@@ -1,0 +1,16 @@
+.radio-chip {
+	cursor: pointer;
+	width: 50px;
+	height: 29px;
+	display: grid;
+	place-items: center;
+	border: 1px solid $gray;
+	color: $gray;
+	&:has(input:checked) {
+		background-color: $gray;
+		color: white;
+	}
+	input {
+		display: none;
+	}
+}

@@ -1,0 +1,48 @@
+.tab-details {
+	margin-top: 48px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $red;
+	.info {
+		display: flex;
+		gap: 50px;
+		align-items: flex-start;
+	}
+	.name {
+		font-family: $lato;
+		font-size: $fontSize9;
+		font-weight: $bold;
+		flex-grow: 1;
+	}
+	.description {
+		font-family: $lato;
+		font-size: $fontSize8;
+		width: 640px;
+		margin-top: -50px;
+	}
+	.logo {
+		width: 100px;
+		aspect-ratio: 1;
+	}
+	.follow {
+		padding: 14px 40px;
+		font-size: $fontSize2;
+		background: $gray;
+		align-self: center;
+	}
+	@media (max-width: $screenSize1) {
+		.info {
+			align-items: center;
+			gap: 20px;
+		}
+		.description {
+			width: auto;
+			margin-top: unset;
+		}
+		.logo {
+			width: 80px;
+		}
+		.follow {
+			padding: 14px 20px;
+		}
+	}
+}

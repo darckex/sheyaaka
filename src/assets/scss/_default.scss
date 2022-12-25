@@ -1,0 +1,28 @@
+.app {
+	font-family: montserrat;
+	color: $blueDark;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $red;
+}
+button {
+	font-family: $roboto;
+	cursor: pointer;
+}
+.rating-holder {
+	padding: 38px 0 35px;
+	border-bottom: 1px solid $red;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 38px;
+}
+
+@media (max-width: $screenSize1) {
+	.app {
+		background-color: #f8f4ea;
+		padding-bottom: 260px;
+	}
+	.rating-holder {
+		display: flex;
+		flex-direction: column;
+	}
+}

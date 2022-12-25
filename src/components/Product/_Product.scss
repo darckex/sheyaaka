@@ -1,0 +1,79 @@
+.product {
+	width: 100%;
+
+	.img {
+		width: 100%;
+		aspect-ratio: 0.77/1;
+		object-fit: cover;
+	}
+	.name {
+		font-size: $fontSize3;
+		font-weight: $bold;
+		margin-top: 13px;
+	}
+	.category {
+		font-size: $fontSize1;
+		margin-top: 2px;
+	}
+	.price-holder {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6px;
+		font-weight: $bold;
+
+		&.has-discount {
+			.price {
+				text-decoration: line-through;
+				color: $lightGray;
+				flex-grow: 0;
+			}
+		}
+		.price {
+			flex-grow: 1;
+			font-size: $fontSize1;
+		}
+		.discount-price {
+			font-size: $fontSize2;
+			color: $red;
+			font-family: $lato;
+		}
+		.discount-tag {
+			color: $red;
+			font-family: $lato;
+			font-size: 8px;
+			padding: 5px 6px;
+			background: $grayBG;
+		}
+		.icon {
+			cursor: pointer;
+		}
+	}
+	.rate-holder {
+		display: flex;
+		gap: 4px;
+		padding: 7px 0;
+		margin-top: 5px;
+		border-top: 1px solid $red;
+		border-bottom: 1px solid $red;
+		.star {
+			width: 17px;
+			height: 16px;
+		}
+		.rate {
+			flex-grow: 1;
+			text-align: right;
+			font-size: $fontSize1;
+			font-family: $lato;
+			font-weight: $bold;
+		}
+	}
+	.color-holder {
+		display: flex;
+		gap: 7px;
+		margin-top: 6px;
+	}
+	@media (max-width: $screenSize1) {
+		width: 210px;
+	}
+}

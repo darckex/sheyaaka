@@ -1,0 +1,17 @@
+.top-strip {
+	text-align: center;
+	font-size: $fontSize4;
+	font-weight: $bold;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+	.icon-box {
+		width: 22px;
+		height: 24px;
+	}
+	@media (max-width: $screenSize1) {
+		display: none;
+	}
+}

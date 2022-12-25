@@ -1,0 +1,35 @@
+.tab-head {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	.item {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		padding: 12px;
+		border: 1px solid $yellow;
+		font-family: $roboto;
+		font-size: $fontSize6;
+		color: $gray;
+		cursor: pointer;
+		&:not(:last-of-type) {
+			border-right: 0;
+		}
+		&.active {
+			box-shadow: 0 0 10px rgba(black, 0.3);
+			background-color: #fff;
+			&:after {
+				content: " ";
+				rotate: -45deg;
+				position: absolute;
+				width: 11px;
+				aspect-ratio: 1;
+				bottom: -6px;
+				background-color: white;
+				border-left: 1px solid $yellow;
+				border-bottom: 1px solid $yellow;
+			}
+		}
+	}
+}

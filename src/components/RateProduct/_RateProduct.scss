@@ -1,0 +1,48 @@
+.rate-product {
+	border: 1px solid $gray;
+	padding: 30px 22px 27px 23px;
+	font-family: $lato;
+	background-color: #fff;
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: $fontSize9;
+		font-weight: $bold;
+	}
+	.char-count {
+		font-size: $fontSize1;
+		font-weight: normal;
+	}
+	textarea {
+		font-size: $fontSize3;
+		padding: 15px 10px;
+		background: $grayBG;
+		margin-top: 12px;
+		width: 100%;
+	}
+	.button-holder {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 9px;
+	}
+	.star-holder {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+	}
+	.star {
+		width: 22px;
+		height: 21px;
+		cursor: pointer;
+	}
+	.rating-count {
+		font-size: $fontSize2;
+	}
+	.button {
+		font-size: $fontSize1;
+		background: $blueDark;
+		padding: 14px 25px;
+	}
+}

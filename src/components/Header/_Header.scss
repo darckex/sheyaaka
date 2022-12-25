@@ -1,0 +1,29 @@
+.header {
+	background: $darkGradient;
+	padding: 19px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.menu {
+		display: flex;
+		gap: 35px;
+		a {
+			color: $gold;
+			font-size: $fontSize5;
+		}
+	}
+	.icon-holder {
+		display: flex;
+		align-items: center;
+		gap: 11px;
+
+		img {
+			cursor: pointer;
+		}
+	}
+	@media (max-width: $screenSize1) {
+		display: none;
+	}
+}

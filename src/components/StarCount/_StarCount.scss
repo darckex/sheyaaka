@@ -1,0 +1,29 @@
+.star-count {
+	display: flex;
+	font-family: $lato;
+	align-items: center;
+	.value {
+		font-size: $fontSize2;
+	}
+	img {
+		margin-left: 4px;
+		width: 15px;
+	}
+	.bar {
+		width: 324px;
+		height: 15px;
+		background: $grayBG;
+		margin-left: 16px;
+		border-radius: 100px;
+	}
+	.percent {
+		margin-left: 5px;
+		font-size: $fontSize1;
+	}
+	@media (max-width: $screenSize1) {
+		.bar {
+			width: auto;
+			flex-grow: 1;
+		}
+	}
+}

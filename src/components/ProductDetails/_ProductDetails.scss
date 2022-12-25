@@ -1,0 +1,232 @@
+.product-details {
+	.container {
+		display: flex;
+		gap: 20px;
+		margin-top: 40px;
+	}
+	.img-slides {
+		width: 540px;
+	}
+	.details {
+		flex-grow: 1;
+	}
+	.head {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		border-bottom: 1px solid $red;
+		padding-bottom: 20px;
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.title {
+			font-size: $fontsize11;
+			font-weight: $bold;
+		}
+		.tag-holder {
+			display: flex;
+			gap: 20px;
+			color: $gray;
+			font-size: $fontSize6;
+			font-weight: $medium;
+		}
+		.exclusive {
+			font-size: $fontSize5;
+			color: $lightGray;
+			font-family: $roboto;
+		}
+		.code {
+			color: $gray;
+			font-size: $fontSize2;
+			font-family: $lato;
+		}
+		.product-logo {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+		}
+	}
+	.price-holder {
+		display: flex;
+		justify-content: space-between;
+		padding: 55px 0;
+		border-bottom: 1px solid $red;
+
+		.price {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			font-family: $lato;
+			font-size: $fontSize9;
+			color: $gray;
+
+			.vat {
+				font-size: $fontSize5;
+			}
+		}
+		.review-holder {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			.star-holder {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+			}
+			.cout {
+				font-family: $lato;
+				font-size: $fontSize4;
+				color: $gray;
+			}
+		}
+	}
+	.color-holder {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		padding: 24px 0;
+		border-bottom: 1px solid $red;
+		font-size: $fontSize7;
+		font-family: $lato;
+		font-weight: $bold;
+	}
+	.size-holder {
+		padding: 30px 0;
+		border-bottom: 1px solid $red;
+		.size-head {
+			display: flex;
+			justify-content: space-between;
+			font-family: $lato;
+		}
+		.name {
+			font-size: $fontSize7;
+			font-weight: $bold;
+		}
+		.option-holder {
+			display: flex;
+			gap: 20px;
+		}
+		.mark {
+			color: $yellow;
+			font-size: $fontSize4;
+		}
+		.option {
+			color: $gray;
+			white-space: nowrap;
+			display: flex;
+			gap: 10px;
+		}
+		.chip-holder {
+			display: flex;
+			gap: 15px;
+			margin-top: 15px;
+		}
+	}
+	.cart-holder {
+		padding: 26px 0 33px;
+		border-bottom: 1px solid $red;
+		.quantity-holder {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		.add-cart-holder {
+			flex-grow: 1;
+			text-align: center;
+			margin-left: 70px;
+		}
+		.add-cart {
+			width: 100%;
+			flex-grow: 1;
+			padding: 12px;
+			font-size: $fontSize7;
+			font-weight: $medium;
+			background-color: $blueDark;
+		}
+		.add-registry {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			gap: 14px;
+			margin-top: 14px;
+			font-family: $lato;
+			font-size: $fontSize4;
+			color: $gray;
+		}
+		.heart-icon {
+			margin-top: 8px;
+			margin-left: 25px;
+		}
+		.order-holder {
+			display: flex;
+			justify-content: space-between;
+			padding: 15px 104px;
+			background-color: $grayBG;
+			color: $gray;
+			font-size: $fontSize3;
+			font-style: italic;
+			margin-top: 27px;
+			.date {
+				font-style: normal;
+				font-size: $fontSize4;
+				color: $yellow;
+			}
+			.change-area {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+	}
+	.tab-holder {
+		padding: 40px 0 0;
+	}
+
+	@media (max-width: $screenSize1) {
+		.container {
+			flex-direction: column;
+		}
+		.img-slides {
+			width: 100%;
+		}
+		.head {
+			.product-logo {
+				display: none;
+			}
+		}
+		.cart-holder {
+			position: fixed;
+			z-index: 1;
+			box-shadow: 0 0 5px rgba(black, 0.3);
+			display: flex;
+			padding: 20px;
+			flex-direction: column-reverse;
+			left: 0;
+			width: 100%;
+			bottom: 66px;
+			background: white;
+			.order-holder {
+				margin-top: 0;
+				background: white;
+				border-bottom: 1px solid $blueDark;
+				padding: 0 0 20px;
+				margin: 0 0 20px;
+			}
+			.quantity-holder {
+				align-items: center;
+			}
+			.heart-icon {
+				display: none;
+			}
+			.add-cart-holder {
+				border-left: 1px solid $gray;
+				padding-left: 20px;
+				margin-left: 20px;
+			}
+		}
+	}
+}
